@@ -1,13 +1,14 @@
 body {
     margin: 0;
     height: 100vh;
+    font-family: sans-serif;
 }
 
-/* a {
+a, ul {
     text-decoration: none;
     color: white;
     list-style: none;
-} */
+}
 
 .header,
 .footer {
@@ -26,9 +27,8 @@ body {
 .header-links ul {
     display: flex;
     gap: 25px;
-    text-decoration: none;
-    color: white;
-    list-style: none;
+    font-size: 18px;
+    color: E5E7EB; 
 }
 
 .head {
@@ -70,13 +70,15 @@ body {
     width: auto;
     height: auto;
     margin-left: 100px;
-    border-radius: 10%;
+    border-radius: 80px;
+    border: 1px solid #18283d;
+
 }
 
 .top-title h1 {
-    font-weight: bolder;
-    font-size: 50px;
-    color: white;
+    font-weight: extra-bold;
+    font-size: 48px;
+    color: #F9FAF8
 }
 
 .top-title p {
@@ -85,7 +87,19 @@ body {
     font-size: 25px;
 }
 
+.top-button {
+
+    border: 1px solid #1F2937;
+    background: #3882f6;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    width: 100px;
+}
+
 .main-content {
+    display: flex;
+    flex-direction: column;
     text-align: center;
 }
 
@@ -93,15 +107,102 @@ body {
 
     display: flex;
     justify-content: center;
-    gap: 35px;
+    gap: 55px;
+
+}
+.photo-info {
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 180px;
+    
+
+}
+.main-image img {
+
+    
+    max-width: 300px;
+    max-height: 300px;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid rgb(98, 98, 233);
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background: #E5E7EB;
+    padding: 35px 250px;
+    margin-top: 50px;
 
 }
 
-.main-image img {
+.quote p {
 
-    max-width: 400px;
-    max-height: 400px;
-    width: auto;
-    height: auto;  
-    border-radius: 10%;  
+    font-size: 36px;
+    color: #1F2937;
+    font-style: italic;
+}
+
+.author {
+
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 200px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.sign-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.call-to-arms {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: #3882f6;
+    width: 1000px;
+    height: 150px;
+}
+
+.call-to-arms-txt{
+    color: white;
+}
+
+.call-header {
+
+    font-size: 22px;
+    font-weight: bold;
+}
+.call-to-arms-button {
+
+    border: 1px solid white;
+    background: #3882f6;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    width: 100px;
+}
+
+.footer {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    height: 80px;
+}
+
+.footer a {
+
+    color: white;
+    font-size: 15px;
 }
